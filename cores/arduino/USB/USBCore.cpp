@@ -17,7 +17,7 @@
 */
 
 #include <Arduino.h>
-
+#ifdef USBCON
 #include "SAMD21_USBDevice.h"
 #include "PluggableUSB.h"
 
@@ -968,3 +968,4 @@ void USBDeviceClass::ISRHandler()
 // USBDevice class instance
 USBDeviceClass USBDevice;
 
+#endif

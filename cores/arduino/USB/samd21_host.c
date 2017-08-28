@@ -28,8 +28,9 @@
 #include "sam.h"
 #include "wiring_digital.h"
 #include "wiring_private.h"
-
+#ifdef USBCON
 #define HOST_DEFINED
+#endif
 #ifdef HOST_DEFINED
 
 //#define TRACE_UOTGHS_HOST(x)	x
